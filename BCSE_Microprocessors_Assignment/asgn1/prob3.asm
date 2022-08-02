@@ -1,0 +1,16 @@
+LXI H, 2500H;
+MOV A, M;
+ANI 0FH;
+
+MOV D, A;
+MOV A, M;
+
+RRC;
+RRC;
+RRC;
+RRC;
+
+ANI 0FH;
+ADD D;
+STA 2550H;
+HLT;
